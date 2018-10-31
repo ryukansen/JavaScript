@@ -16,6 +16,4 @@ require 'vendor/autoload.php';
 $render = new \Render\Render('template.phtml');
 ```
 
-
-
-
+Dentro da Classe `Render` passamos como parâmetro o arquivo visual do site, neste caso o arquivo `template.php`.
