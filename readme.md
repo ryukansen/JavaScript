@@ -28,4 +28,4 @@ $args = [
 echo $render->render($args);
 
 ```
-Na Classe `Render`, é passado como parâmetro o arquivo visual do sistema (`template.phtml`), e `array` `$args` será passado como parâmetro no método `render()`, 
+Na Classe `Render`, é passado como parâmetro o arquivo visual do sistema (`template.phtml`), e o `array` `$args` será passado como parâmetro no método `render()`, 
