@@ -23,7 +23,6 @@ Após isso, no mesmo arquivo, deverá ser criado um `array`, que irá ser passad
 ```php
 <?php 
 require 'vendor/autoload.php';
-
 $render = new \Render\Render('template.phtml');
 
 $args = [
