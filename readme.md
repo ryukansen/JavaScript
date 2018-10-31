@@ -11,3 +11,20 @@ Com este conceito, poderemos manipular os templates de um determinado sistema, a
 Deverão ser manipulados os arquivos: `index.php` e `template.phtml`. Os códigos passados no `index.php`, poderão ser introduzidos no arquivo principal do seu sistema.
 
 No `index.php`, a Classe `Render` será responsável por redenizar dados do arquivo visual do sistema, neste caso `template.phtml`.
+
+Dados do `index.php`:
+
+```php
+<?php 
+require 'vendor/autoload.php';
+
+$render = new \Render\Render('template.phtml');
+
+$args = [
+    "name" => "Eric Neves",
+    "email" => "ericneves@gmail.com"
+];
+
+echo $render->render($args);
+
+```
