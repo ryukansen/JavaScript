@@ -54,3 +54,5 @@ As chaves do `array` `$args`, serão introduzidas no arquivo `template.phtml`, e
 </body>
 </html>
 ```
+
+Agora as chaves do `array` `$args` deverão ser colocadas no arquivo `template.phtml`, 
