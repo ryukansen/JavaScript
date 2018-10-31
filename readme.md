@@ -35,7 +35,7 @@ echo $render->render($args);
 
 ```
 
-As chaves do `array` `$args`, serão introsuzidas no arquivo `template.phtml`, e a Classe `Render` irá substituir as chaves do `array` por seus respectivos valores.
+As chaves do `array` `$args`, serão introduzidas no arquivo `template.phtml`, e a Classe `Render` irá substituir as chaves do `array` por seus respectivos valores.
 
 ```html
 <!DOCTYPE html>
