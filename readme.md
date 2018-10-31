@@ -19,3 +19,18 @@ $render = new \Render\Render('template.phtml');
 Dentro da Classe `Render` passamos como parâmetro o arquivo visual do site, neste caso o arquivo `template.phtml`.
 
 Após isso, no mesmo arquivo, deverá ser criado um `array`, que irá ser passado como parâmetro no método `render()`. 
+
+```php
+<?php 
+require 'vendor/autoload.php';
+
+$render = new \Render\Render('template.phtml');
+
+$args = [
+    "name" => "Eric Neves",
+    "email" => "ericneves@gmail.com"
+];
+
+echo $render->render($args);
+
+```
