@@ -10,9 +10,9 @@ Com este conceito, poderemos manipular os templates de um determinado sistema, a
 
 Deverão ser manipulados os arquivos: `index.php` e `template.phtml`. 
 
-No `index.php`, a Classe `Render` será responsável por redenizar dados do arquivo visual do sistema, neste caso `template.phtml`.
+No `index.php`, a Classe `Render` será responsável por renderizar dados do arquivo visual do sistema, neste caso `template.phtml`.
 
-Dados do `index.php`:
+Dados do arquivo `index.php`:
 
 ```php
 <?php 
@@ -22,15 +22,15 @@ $render = new \Render\Render('template.phtml');
 
 $args = [
     "name" => "Eric Neves",
-    "email" => "ericneves@gmail.com"
+    "instagram" => "https://www.instagram.com/eric_nevesr/"
 ];
 
 echo $render->render($args);
 
 ```
-Na Classe `Render`, é passado como parâmetro o arquivo visual do sistema (`template.phtml`), e o `array $args` será passado como parâmetro no método `render()`, as `keys` do `array $args` serão chamadas no arquivo `template.phtml`, dentro de chaves, neste caso, `{name}` e `{email}`, e assim serão substituídas pelos valos passados no `array`.
+Na Classe `Render`, é passado como parâmetro o arquivo visual do sistema (`template.phtml`), e o `array $args` será passado como parâmetro no método `render()`, as `keys` do `array $args`, serão chamadas no arquivo `template.phtml`, dentro de chaves, neste caso, `{name}` e `{email}`, e assim serão substituídas pelos valos passados no `array`.
 
-Dados do `template.phtml`.
+Dados do arquivo `template.phtml`:
 
 ```html
 <!DOCTYPE html>
@@ -44,8 +44,15 @@ Dados do `template.phtml`.
 
     <!-- Exemplo -->
     <h1>{name}</h1>
-    <h1>{email}</h1>
+    <h1>{instagram}</h1>
     
 </body>
 </html>
+```
+
+`O retorno deverá ser:`
+
+```
+Eric Neves
+https://www.instagram.com/eric_nevesr/
 ```
