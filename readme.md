@@ -10,8 +10,7 @@ Com este conceito, poderemos manipular os templates de um determinado sistema, a
 
 O primeiro passo é criar um arquivo **index.php**, logo em seguida, você deverá instanciar o **autoload**, como no exemplo abaixo.
 
-```
-<?php 
-require 'vendor/autoload.php';
-
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
 ```
