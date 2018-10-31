@@ -25,6 +25,7 @@ Após isso, no mesmo arquivo, deverá ser criado um `array`, que irá ser passad
 require 'vendor/autoload.php';
 $render = new \Render\Render('template.phtml');
 
+//Array
 $args = [
     "name" => "Eric Neves",
     "email" => "ericneves@gmail.com"
