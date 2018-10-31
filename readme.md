@@ -28,3 +28,4 @@ $args = [
 echo $render->render($args);
 
 ```
+Na Classe `Render`, é passado como parâmetro o arquivo visual do sistema (`template.phtml`)
