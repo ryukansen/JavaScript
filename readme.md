@@ -28,7 +28,7 @@ $args = [
 echo $render->render($args);
 
 ```
-Na Classe `Render`, é passado como parâmetro o arquivo visual do sistema (`template.phtml`), e o `array $args` será passado como parâmetro no método `render()`, as `keys` do `array $args`, serão chamadas no arquivo `template.phtml`, dentro de chaves, neste caso, `{name}` e `{email}`, e assim serão substituídas pelos valos passados no `array`.
+Na Classe `Render`, é passado como parâmetro o arquivo visual do sistema (`template.phtml`), e o `array $args` será passado como parâmetro no método `render()`, as `keys` do `array $args`, serão chamadas no arquivo `template.phtml`, dentro de chaves, neste caso, `{name}` e `{email}`, e assim serão substituídas pelos valores passados no `array`.
 
 Dados do arquivo `template.phtml`:
 
@@ -50,9 +50,10 @@ Dados do arquivo `template.phtml`:
 </html>
 ```
 
-`O retorno deverá ser:`
+**Retorno**
 
 ```
 Eric Neves
 https://www.instagram.com/eric_nevesr/
 ```
+
