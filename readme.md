@@ -34,3 +34,23 @@ $args = [
 echo $render->render($args);
 
 ```
+
+As chaves do `array` `$args`, serão introsuzidas no arquivo `template.phtml`, e a Classe `Render` irá substituir as chaves do `array` por seus respectivos valores.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Template</title>
+    <style>body{font-family: sans-serif;color: #444;}</style>
+</head>
+<body>
+
+    <!-- Exemplo -->
+    <h1>{name}</h1>
+    <h1>{email}</h1>
+    
+</body>
+</html>
+```
