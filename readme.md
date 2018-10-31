@@ -8,7 +8,7 @@ Instagram: https://www.instagram.com/eric_nevesr/
 
 Com este conceito, poderemos manipular os templates de um determinado sistema, assim como o famoso framework Laravel.
 
-O primeiro passo é criar um arquivo **index.php**, logo em seguida, você deverá instanciar o **autoload**, como no exemplo abaixo.
+O primeiro passo é criar um arquivo `index.php`, logo em seguida, você deverá instanciar o `autoload`, como no exemplo abaixo.
 
 ```
 <?php 
